@@ -1,0 +1,66 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --pink: #FFC0CB; 
+    --winning-blocks: #2D414B;
+}
+
+body {
+    color: var(--pink);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+h1 {
+    font-size: 55px;
+text-transform: uppercase;
+}
+
+.container {
+    padding: 44px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    background-color:aqua;
+}
+#gameboard {
+    width:450px;
+    display:flex;
+    flex-wrap: wrap;
+    margin-top: 40px
+}
+.box {
+    height: 155px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--pink);
+    font-size: 120px;
+    border-bottom: 3px solid;
+    border-right:3px solid;
+}
+.box:nth-child(3n) {
+    border-right: none;
+}
+.box:nth-child(6) ~ .box {
+    border-bottom: none;
+}
+button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: aquamarine;
+    color:#FFC0CB;
+    border-color: var(--pink);
+    font-size: 20px;
+    font weight: 600;
+}
+button:hover {
+   color:white;
+   background-color: dark grey;
+   cursor: pointer;
+}
